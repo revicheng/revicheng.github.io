@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.columnleft {
+    float: left;
+    width: 50%;
+    padding: 16px 8px 16px 16px;
+}
+
+.columnright {
+    float: left;
+    width: 50%;
+    padding: 16px 16px 16px 8px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+</head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="/w3images/photographer.jpg" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">REBECCA CHENG</h1>
+    <h5 class="w3-hide-large" style="white-space:nowrap">REBECCA CHENG</h5>
+    <h3 class="w3-hide-medium w3-hide-small">CSE 131 FINAL PROJECT</h3>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-center" id="portfolio">
+
+  <!-- Images (Portfolio) -->
+  <div class="row">
+    <div class="columnleft">
+      <img src="/w3images/ocean.jpg" alt="Ocean" width=100%>
+    </div>
+    <div class="columnright">
+      <img src="/w3images/ocean2.jpg" alt="Ocean II" width=100%>
+    </div>
+  </div>
+  
+  <img src="/w3images/falls2.jpg" alt="Falls" class="w3-padding" width=100%>
+  <img src="/w3images/mountainskies.jpg" alt="Skies" class="w3-padding" width=100%>
+  <img src="/w3images/mountains2.jpg" alt="Mountains" class="w3-padding" width=100%>
+
+ 
+<!-- End page content -->
+</div>
+
+</body>
+</html>
