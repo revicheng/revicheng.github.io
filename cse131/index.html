@@ -27,6 +27,11 @@
         height: 100%;
     }
 
+    /* don't let people save photo */
+    img {
+      pointer-events: none;
+    }
+
     /* since i can't figure out how to even the heights... */
     .row::after {
         content: "";
