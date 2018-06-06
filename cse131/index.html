@@ -76,11 +76,31 @@
         width: 50%;
         padding: 0px 0px 0px 8px;
     }  
+
+    .center_align {
+        text-align:center;
+    }
+
+    /* header photo and scroll */
+        .endparallax {
+        /* The image used */
+        background-image: url('photos/butte_old.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('photos/butte_old.jpg');
+
+        /* Full height */
+        height: 80%; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     </style>
 </head>
 
 
-<title>CSE 131 Final Assignment</title>
+<title>DRIVE</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -89,9 +109,10 @@
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax_percent -->
 <div class="parallax"> 
     <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-        <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">REBECCA (REVI) CHENG</h1>
-        <h5 class="w3-hide-large" style="white-space:nowrap">REBECCA (REVI) CHENG</h5>
-        <h3 class="w3-hide-medium w3-hide-small">CSE 131 FINAL</h3>
+        <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">DRIVE</h1>
+        <h5 class="w3-hide-large" style="white-space:nowrap">DRIVE</h5>
+        <h3 class="w3-hide-medium w3-hide-small">REBECCA (REVI) CHENG</h3>
+        <h5 class="w3-hide-small w3-hide-xxsmall">CSE 131 FINAL</h5>
     </div>
 </div>
      
@@ -142,7 +163,32 @@
     <img src="photos/sunset_mountain.jpg" class="padding" width=100%>
     <img src="photos/sunset_blue_mtns.jpg" class="padding" width=100%>
     <img src="photos/long_exposure.jpg" class="padding" width=100%>
-<!-- End page content -->
+</div>
+
+<div class="endparallax w3-display-container w3-text-white"> 
+    <div class="w3-display-middle center_align" font="Verdanda">
+        <h3>
+            My theme for this project is "Drive". I took photos during a roadtrip to 
+            <a href="https://en.wikipedia.org/wiki/Steptoe_Butte">Steptoe Butte</a>, 
+            however a majority of the photos are taken on the road there. The intention
+            behind this was to illustrate that the best part of a roadtrip is during the 
+            drive, rather than the destination.
+            </br>
+            </br>
+
+            Also see photos at my 
+            <a href="https://flic.kr/s/aHsmjjmw7H">Flickr</a>.
+        </h3>
+    </div>
+
+    <div class="w3-display-bottommiddle center_align" font="Verdanda">
+        <h5>
+            All photos were taken at 
+            <a href="https://en.wikipedia.org/wiki/Steptoe_Butte">Steptoe Butte</a>,
+            <a href="https://en.wikipedia.org/wiki/Vantage_Bridge">Columbia River</a>,
+            and on the road between the two.
+        </h5>
+    </div>
 </div>
 
 </body>
