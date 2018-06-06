@@ -11,6 +11,7 @@ body, html {height: 100%}
 .bgimg {
     background-image: url('home.jpg');
     min-height: 100%;
+    /* darken image */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background.jpg');
     background-position: center;
     background-size: cover;
@@ -23,27 +24,37 @@ img {
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
     <div class="w3-display-middle">
+        <!-- profile picture -->
         <div align="center">
             <img class="w3-image"src="profile_pic.jpg" alt="Me" width=20% height=auto>
         </div>
+
+        <!-- name -->
         <h1 class="w3-jumbo w3-animate-top" align="center">REVI CHENG</h1>
+
+        <!-- blurb -->
         <div align="center" font="Verdanda">
             <h3 class="w3-large" align="center"> 
                 Hi! I'm a sophmore at the <a href="https://www.washington.edu/">University of Washington</a> 
-                studying <a href="https://www.cs.washington.edu/">Computer Science</a>
+                studying <a href="https://www.cs.washington.edu/">Computer Science</a>.
                 This summer I will be interning at Microsoft on <a href="https://azure.microsoft.com/en-us/overview/azure-stack/">Azure Stack</a>.
                 I enjoy photography, painting and crazy roadtrips.
             </h3>
+
+            <!-- line -->
             <hr class="w3-border-grey" style="margin:auto;width:40%">
+
+            <!-- links to portfolios -->
             <div class=" w3-animate-bottom" align="center">
                 <h4 class="w3-large">I'm an artsy person:
                     <a href="art/">Art</a> |
-                    <a href="cse131/">Photography (under construction)</a>
+                    <a href="cse131/">Photography</a>
                 </h4>
             </div>
         </div>
     </div>
 
+    <!-- contact me -->
     <div class="w3-display-bottommiddle">
         <h4 class="w3-medium">Contact Me:
             <a href="mailto:revi.cheng@gmail.com">Email Me</a> |

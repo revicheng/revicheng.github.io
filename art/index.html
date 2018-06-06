@@ -3,40 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-
-    .columnleft {
-        float: left;
-        width: 50%;
-        padding: 0px 8px 0px 0px;
-    }
-
-    .columnright {
-        float: left;
-        width: 50%;
-        padding: 0px 0px 0px 8px;
-    }
-
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .header_img {
-        filter: brightness(50%);
-    }
-
-    .padding {
-        align-content: center;
-        padding: 16px 128px 0px 128px;
-    }
-
-    body, html {
-        height: 100%;
-    }
-
+    /* header photo and scroll */
     .parallax {
         /* The image used */
         background-image: url('photos/plant_colors.jpg');
@@ -51,7 +18,59 @@
         background-size: cover;
     }
 
+    .padding {
+        align-content: center;
+        padding: 16px 128px 0px 128px;
+    }
 
+    body, html {
+        height: 100%;
+    }
+
+    /* since i can't figure out how to even the heights... */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .columnleft1 {
+        float: left;
+        width: 50%;
+        padding: 0px 8px 0px 0px;
+    }
+
+    .columnright1 {
+        float: left;
+        width: 50%;
+        padding: 0px 0px 0px 8px;
+    }
+
+    .columnleft2 {
+        float: left;
+        width: 51%;
+        padding: 0px 8px 0px 0px;
+    }
+
+    .columnright2 {
+        float: left;
+        width: 49%;
+        padding: 0px 0px 0px 8px;
+    }
+
+    .columnleft3 {
+        float: left;
+        width: 42.9%;
+        padding: 0px 8px 0px 0px;
+    }
+
+    .columnright3 {
+        float: left;
+        width: 57.1%;
+        padding: 0px 0px 0px 8px;
+    }
 
     </style>
 </head>
@@ -79,10 +98,10 @@
     <img src="photos/church.jpg" class="padding" width=100%>
 
     <div class="row padding" >
-        <div class="columnleft">
+        <div class="columnleft1">
             <img src="photos/alkai.jpg" width=100%>
         </div>
-        <div class="columnright">
+        <div class="columnright1">
             <img src="photos/cape.jpg" width=100%>
         </div>
     </div>
@@ -90,10 +109,10 @@
     <img src="photos/sunset_narrow.jpg" class="padding" width=100%>
   
     <div class="row padding">
-        <div class="columnleft">
+        <div class="columnleft2">
             <img src="photos/church_small.jpg" width=100%>
         </div>
-        <div class="columnright">
+        <div class="columnright2">
             <img src="photos/blue_stairwell.jpg" width=100%>
         </div>
     </div>
@@ -101,22 +120,17 @@
     <img src="photos/concert_pink.jpg" class="padding" width=100%>
 
     <div class="row padding">
-        <div class="columnleft">
-            <img src="photos/shoelace.jpg" width=100%>
-        </div>
-        <div class="columnright">
+        <div class="columnleft3">
             <img src="photos/arches_watercolor.jpg" width=100%>
+        </div>
+        <div class="columnright3">
+            <img src="photos/shoelace.jpg" width=100%>
         </div>
     </div>
 
     <img src="photos/lake.jpg" class="padding" width=100%>
     <img src="photos/plant_colors.jpg" class="padding" width=100%>
     <img src="photos/snail_stairwell.jpg" class="padding" width=100%>
-  
-
-  <!--<img src="/w3images/mountainskies.jpg" alt="Skies" class="w3-padding" width=90%> -->
-  <!--<img src="/w3images/mountains2.jpg" alt="Mountains" class="w3-padding" width=90%> -->
-
  
 <!-- End page content -->
 </div>

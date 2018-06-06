@@ -2,7 +2,39 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+    <style>  
+    /* header photo and scroll */
+    .parallax {
+        /* The image used */
+        background-image: url('photos/butte_old.jpg');
+
+        /* Full height */
+        height: 100%; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .padding {
+        align-content: center;
+        padding: 16px 128px 0px 128px;
+    }
+
+    body, html {
+        height: 100%;
+    }
+
+    /* since i can't figure out how to even the heights... */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     .columnleft1 {
         float: left;
@@ -38,45 +70,7 @@
         float: left;
         width: 50%;
         padding: 0px 0px 0px 8px;
-    }    
-
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .header_img {
-        filter: brightness(50%);
-    }
-
-    .padding {
-        align-content: center;
-        padding: 16px 128px 0px 128px;
-    }
-
-    body, html {
-        height: 100%;
-    }
-
-    .parallax {
-        /* The image used */
-        background-image: url('photos/butte_old.jpg');
-
-        /* Full height */
-        height: 100%; 
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-
-
+    }  
     </style>
 </head>
 
@@ -141,14 +135,8 @@
     <img src="photos/sunset_cross.jpg" class="padding" width=100%>
     <img src="photos/sunset_highway.jpg" class="padding" width=100%>
     <img src="photos/sunset_mountain.jpg" class="padding" width=100%>
-    <img src="photos/long_exposure.jpg" class="padding" width=100%>
     <img src="photos/sunset_blue_mtns.jpg" class="padding" width=100%>
-  
-
-  <!--<img src="/w3images/mountainskies.jpg" alt="Skies" class="w3-padding" width=90%> -->
-  <!--<img src="/w3images/mountains2.jpg" alt="Mountains" class="w3-padding" width=90%> -->
-
- 
+    <img src="photos/long_exposure.jpg" class="padding" width=100%>
 <!-- End page content -->
 </div>
 
