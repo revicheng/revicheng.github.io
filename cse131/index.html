@@ -7,31 +7,25 @@
     .parallax {
         /* The image used */
         background-image: url('photos/butte_old.jpg');
-
         /* Full height */
         height: 100%; 
-
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-
     .padding {
         align-content: center;
         padding: 16px 128px 0px 128px;
     }
-
     body, html {
         height: 100%;
     }
-
     /* don't let people save photo */
     img {
       pointer-events: none;
     }
-
     /* since i can't figure out how to even the heights... */
     .row::after {
         content: "";
@@ -40,66 +34,46 @@
         display: flex;
         flex-wrap: wrap;
     }
-
-    .columnleft {
-        float: left;
-        padding: 0px 8px 0px 0px;
-    }
-
-    .columnright {
-        float: right;
-        padding: 0px 0px 0px 8px;
-    }
-
     .columnleft1 {
         float: left;
         width: 77.4%;
         padding: 0px 8px 0px 0px;
     }
-
     .columnright1 {
         float: left;
         width: 22.6%;
         padding: 0px 0px 0px 8px;
     }
-
     .columnleft2 {
         float: left;
         width: 28.4%;
         padding: 0px 8px 0px 0px;
     }
-
     .columnright2 {
         float: left;
         width: 71.6%;
         padding: 0px 0px 0px 8px;
     }
-
     .columnleft3 {
         float: left;
         width: 50%;
         padding: 0px 8px 0px 0px;
     }
-
     .columnright3 {
-        float: right;
+        float: left;
         width: 50%;
         padding: 0px 0px 0px 8px;
     }  
-
     .center_align {
         text-align:center;
     }
-
     /* header photo and scroll */
         .endparallax {
         /* The image used */
         background-image: url('photos/butte_old.jpg');
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('photos/butte_old.jpg');
-
         /* Full height */
         height: 80%; 
-
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
@@ -126,14 +100,8 @@
     </div>
 </div>
      
-
-
-
-
-
 <!-- Page content -->
-<div class="w3-center w3-padding" id="portfolio">   
-    
+<div class="w3-center w3-padding" id="portfolio">
 
     <!-- Images (Portfolio) -->
     <img src="photos/highway_scurve.jpg" class="padding" width=100%>
@@ -142,10 +110,13 @@
     <img src="photos/tracks.jpg" class="padding" width=100%>
     <img src="photos/cracked_road.jpg" class="padding" width=100%>
 
-
-    <div class="padding" id="div">
-        <img src="photos/butte_brown.jpg" id="butte_brown"/>
-        <img src="photos/butte_town.jpg" id="butte_town"/>
+    <div class="row padding" >
+        <div class="columnleft1">
+            <img src="photos/butte_brown.jpg" width=100%>
+        </div>
+        <div class="columnright1">
+            <img src="photos/butte_town.jpg" width=100%>
+        </div>
     </div>
     
     <img src="photos/butte_trees.jpg" class="padding" width=100%>
@@ -176,55 +147,7 @@
     <img src="photos/sunset_mountain.jpg" class="padding" width=100%>
     <img src="photos/sunset_blue_mtns.jpg" class="padding" width=100%>
     <img src="photos/long_exposure.jpg" class="padding" width=100%>
-
-    <script>
-        // get values from html
-        var right = document.getElementById("butte_brown");
-        var left = document.getElementById("butte_town");
-        var div = document.getElementById("div");
-
-        var width = left.width + right.width;
-        var height;
-
-        // make both photos the same height
-        if (right.height > left.height) {
-            var heightPercentage = left.height / right.height;
-            right.height *= heightPercentage;
-            right.width *= heightPercentage;
-            height = right.height;
-        } else {
-            var heightPercentage = right.height / left.height;
-            left.height *= heightPercentage;
-            left.width *= heightPercentage;
-            height = left.height;
-        }
-
-        // get new dimensions
-        var newWidth = div.offsetWidth;
-        var newHeight = newWidth * height / (right.width + left.width);
-
-        // get the correct width percentages
-        var rightPercentage = right.width / width * 100;
-        var leftPercentage = left.width / width * 100;
-
-        alert("right%: " + rightPercentage + " | left&: " + leftPercentage);
-
-        right.style.width = "" + rightPercentage + "%";
-        right.height = newHeight;
-        left.style.width = "" + leftPercentage + "%";
-        left.height = newHeight;
-
-        // alert("totalWidth: " + totalWidth + "\n" +
-        //         "right: " + rightPercentage + "\n" +
-        //         "left: " + leftPercentage);
-
-        alert("right: " + right.height + "x" + right.width + "\n" +
-                "left: " + left.height + "x" + left.width);
-
-    </script>
 </div>
-
-
 
 <div class="endparallax w3-display-container w3-text-white"> 
     <div class="w3-display-middle center_align" font="Verdanda">
@@ -237,6 +160,8 @@
             </br>
             </br>
 
+            Also see photos at my 
+            <a href="https://flic.kr/s/aHsmjjmw7H">Flickr</a>.
         </h3>
     </div>
 
