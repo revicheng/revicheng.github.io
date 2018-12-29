@@ -18,8 +18,12 @@ img {
     border: 0px;
 }
 
-a {
+#intro a, #end a {
     color: white;
+}
+
+a {
+    color: black;
 }
 
 /*  intro  */
