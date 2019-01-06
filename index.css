@@ -8,17 +8,12 @@ h1 {
     margin-bottom: 4%;
 }
 
-h4 {
-    margin-top: 0%;
-    margin-bottom: 0%;
-}
-
 img {
     object-fit: cover;
     border: 0px;
 }
 
-#intro a, #end a {
+#intro-page a, #end-page a {
     color: white;
 }
 
@@ -27,14 +22,14 @@ a {
 }
 
 /*  intro  */
-#intro, #end {    
-    background-image: url("./background.jpg");
+#intro-page, #end-page {    
+    background-image: url("./mainphotos/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #intro-box, #end-box {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .3);
     height:100%;
 }
 
@@ -110,14 +105,14 @@ a {
     bottom: 0;
     right: 0;
     margin: auto;
-    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background: white url(img/link.png) no-repeat center 20%;
     background-size:50px 50px;
     opacity:0;
     filter:alpha(opacity=0);/*For IE6 - IE8*/
     transition:all 0.6s;
 }
 #rig li:hover .rig-overlay {
-    opacity:0.8;
+    opacity:0.3;
 }
 
 /* If have captions */
