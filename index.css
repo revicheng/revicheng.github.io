@@ -1,0 +1,35 @@
+#intro {    
+    background-image: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro-box {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#intro-content {
+    text-align: center;
+    color: white;
+    width: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 25%;
+    font-family: "Raleway", sans-serif;
+}
+
+#p-img {
+    border-radius: 50%;
+    width: 25%;
+}
+
+h1 {
+    font-size: 70px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+h4 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
