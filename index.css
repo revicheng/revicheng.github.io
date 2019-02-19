@@ -105,7 +105,7 @@ a {
     bottom: 0;
     right: 0;
     margin: auto;
-    background: white url(img/link.png) no-repeat center 20%;
+    background: white no-repeat center 20%;
     background-size:50px 50px;
     opacity:0;
     filter:alpha(opacity=0);/*For IE6 - IE8*/
