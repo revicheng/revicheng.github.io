@@ -2,97 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    /* header photo and scroll */
-    .parallax {
-        /* The image used */
-        background-image: url('./background.jpg');
-
-        /* Full height */
-        height: 100%; 
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .padding {
-        align-content: center;
-        padding: 16px 128px 0px 128px;
-    }
-
-    body, html {
-        height: 100%;
-    }
-
-    /* don't let people save photo */
-    img {
-      pointer-events: none;
-    }
-
-    /* since i can't figure out how to even the heights... */
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .columnleft1 {
-        float: left;
-        width: 50%;
-        padding: 0px 8px 0px 0px;
-    }
-
-    .columnright1 {
-        float: left;
-        width: 50%;
-        padding: 0px 0px 0px 8px;
-    }
-
-    .columnleft2 {
-        float: left;
-        width: 51%;
-        padding: 0px 8px 0px 0px;
-    }
-
-    .columnright2 {
-        float: left;
-        width: 49%;
-        padding: 0px 0px 0px 8px;
-    }
-
-    .columnleft3 {
-        float: left;
-        width: 42.9%;
-        padding: 0px 8px 0px 0px;
-    }
-
-    .columnright3 {
-        float: left;
-        width: 57.1%;
-        padding: 0px 0px 0px 8px;
-    }
-
-    /* header photo and scroll */
-    .endparallax {
-        /* The image used */
-        background-image: url('./background.jpg');
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./background.jpg');
-
-        /* Full height */
-        height: 80%; 
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    </style>
+    <link href="../subpage.css" media="all" rel="stylesheet" />  
 </head>
 
 
@@ -103,7 +13,7 @@
 <body>
 
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax_percent -->
-<div class="parallax"> 
+<div class="parallax" style="--bkurl: url('./art/background.jpg')"> 
     <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
         <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">REVI CHENG</h1>
         <h5 class="w3-hide-large" style="white-space:nowrap">REVI CHENG</h5>
@@ -118,10 +28,10 @@
     <img src="photos/church.jpg" class="padding" width=100%>
 
     <div class="row padding" >
-        <div class="columnleft1">
+        <div class="columnleft" style="width: 50%">
             <img src="photos/alkai.jpg" width=100%>
         </div>
-        <div class="columnright1">
+        <div class="columnright" style="width: 50%">
             <img src="photos/cape.jpg" width=100%>
         </div>
     </div>
@@ -129,10 +39,10 @@
     <img src="photos/sunset_narrow.jpg" class="padding" width=100%>
   
     <div class="row padding">
-        <div class="columnleft2">
+        <div class="columnleft" style="width: 51%">
             <img src="photos/church_small.jpg" width=100%>
         </div>
-        <div class="columnright2">
+        <div class="columnright" style="width: 49%">
             <img src="photos/blue_stairwell.jpg" width=100%>
         </div>
     </div>
@@ -140,10 +50,10 @@
     <img src="photos/concert_pink.jpg" class="padding" width=100%>
 
     <div class="row padding">
-        <div class="columnleft3">
+        <div class="columnleft" style="width: 42.9%">
             <img src="photos/arches_watercolor.jpg" width=100%>
         </div>
-        <div class="columnright3">
+        <div class="columnright" style="width: 56.1%">
             <img src="photos/shoelace.jpg" width=100%>
         </div>
     </div>
@@ -152,7 +62,7 @@
     <img src="photos/plant_colors.jpg" class="padding" width=100%>
     <img src="photos/snail_stairwell.jpg" class="padding" width=100%>
 </div>
-<div class="endparallax w3-display-container w3-text-white"> 
+<div class="endparallax w3-display-container w3-text-white" style="--bkurl: url('./art/background.jpg')"> 
     <div class="w3-display-bottommiddle center_align" font="Verdanda">
         <h5>
             Acrylic and watercolor, 2014-2016
