@@ -76,6 +76,22 @@
         width: 57.1%;
         padding: 0px 0px 0px 8px;
     }
+
+    /* header photo and scroll */
+    .endparallax {
+        /* The image used */
+        background-image: url('./background.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./background.jpg');
+
+        /* Full height */
+        height: 80%; 
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     </style>
 </head>
 
@@ -136,6 +152,12 @@
     <img src="photos/plant_colors.jpg" class="padding" width=100%>
     <img src="photos/snail_stairwell.jpg" class="padding" width=100%>
 </div>
-
+<div class="endparallax w3-display-container w3-text-white"> 
+    <div class="w3-display-bottommiddle center_align" font="Verdanda">
+        <h5>
+            Acrylic and watercolor, 2014-2016
+        </h5>
+    </div>
+</div>
 </body>
 </html>
