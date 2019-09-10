@@ -2,88 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>  
-    /* header photo and scroll */
-    .parallax {
-        /* The image used */
-        background-image: url('photos/blue_faded_mt.jpg');
-        /* Full height */
-        height: 100%; 
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .padding {
-        align-content: center;
-        padding: 16px 128px 0px 128px;
-    }
-    body, html {
-        height: 100%;
-    }
-    /* don't let people save photo */
-    img {
-      pointer-events: none;
-    }
-    /* since i can't figure out how to even the heights... */
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .columnleft1 {
-        float: left;
-        width: 75%;
-        padding: 0px 8px 0px 0px;
-    }
-    .columnright1 {
-        float: left;
-        width: 25%;
-        padding: 0px 0px 0px 8px;
-    }
-    .columnleft2 {
-        float: left;
-        width: 28.4%;
-        padding: 0px 8px 0px 0px;
-    }
-    .columnright2 {
-        float: left;
-        width: 71.6%;
-        padding: 0px 0px 0px 8px;
-    }
-    .columnleft3 {
-        float: left;
-        width: 50%;
-        padding: 0px 8px 0px 0px;
-    }
-    .columnright3 {
-        float: left;
-        width: 50%;
-        padding: 0px 0px 0px 8px;
-    }  
-    .center_align {
-        text-align:center;
-    }
-
-    /* header photo and scroll */
-        .endparallax {
-        /* The image used */
-        background-image: url('photos/blue_faded_mt.jpg');
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('photos/blue_faded_mt.jpg');
-
-        /* Full height */
-        height: 80%; 
-
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    </style>
+    <link href="../subpage.css" media="all" rel="stylesheet" />  
 </head>
 
 
@@ -94,7 +13,7 @@
 <body>
 
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax_percent -->
-<div class="parallax"> 
+<div class="parallax" style="--bkurl: url('./arctic/background.jpg')"> 
     <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
         <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">ARCTIC</h1>
         <h5 class="w3-hide-large" style="white-space:nowrap">ARCTIC</h5>
@@ -105,78 +24,52 @@
      
 <!-- Page content -->
 <div class="w3-center w3-padding" id="portfolio">
-
-    <!-- Images (Portfolio) 
-    <img src="photos/highway_scurve.jpg" class="padding" width=100%>
-
-    <div class="row padding" >
-        <div class="columnleft1">
-            <img src="photos/butte_brown.jpg" width=100%>
-        </div>
-        <div class="columnright1">
-            <img src="photos/butte_town.jpg" width=100%>
-        </div>
-    </div> -->
-    <!--img src="photos/bridge_grate.jpg" class="padding" width=100%>
-    <img src="photos/brown_arctic_lake.jpg" class="padding" width=100%>
-    <img src="photos/bw_bridge.jpg" class="padding" width=100%>
-    <img src="photos/bw_car.jpg" class="padding" width=100%>
-    <img src="photos/car_arctic_ocean.jpg" class="padding" width=100%>
-    <img src="photos/car.jpg" class="padding" width=100%-->
-    <!--img src="photos/mom.jpg" class="padding" width=100%-->
-    <!--img src="photos/dehaze_four.jpg" class="padding" width=100%>
-    <img src="photos/dehaze_one.jpg" class="padding" width=100%>
-    <img src="photos/dehaze_three.jpg" class="padding" width=100%-->
-    <!--img src="photos/long_road_wide.jpg" class="padding" width=100%-->
-    <!--img src="photos/picnic_bench.jpg" class="padding" width=100%-->
-    <!--img src="photos/stones_sun_reflect.jpg" class="padding" width=100%>
-    <img src="photos/sun_and_clouds.jpg" class="padding" width=100%-->
-    <img src="photos/clouds_wide.jpg" class="padding" width=100%>
-    <img src="photos/curve_stop_bw.jpg" class="padding" width=100%>
-    <img src="photos/clouds.jpg" class="padding" width=100%>
-    <img src="photos/curve_stop_road.jpg" class="padding" width=100%>
-    <img src="photos/curve_stop_snow_road.jpg" class="padding" width=100%>
-    <img src="photos/dad_cloud_line.jpg" class="padding" width=100%>
-    <img src="photos/dust.jpg" class="padding" width=100%>
-    <img src="photos/empty_arctic.jpg" class="padding" width=100%>
+    <!-- <img src="photos/clouds_wide.jpg" class="padding" width=100%>
+    <img src="photos/curve_stop_bw.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/clouds.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/curve_stop_road.jpg" class="padding" width=100%> -->
     <img src="photos/faded_mt_black.jpg" class="padding" width=100%>
+    <!-- <img src="photos/dad_cloud_line.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/dust.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/empty_arctic.jpg" class="padding" width=100%> -->
     <img src="photos/first_stop_narrow.jpg" class="padding" width=100%>
     <img src="photos/first_stop_tall.jpg" class="padding" width=100%>
-    <img src="photos/lake.jpg" class="padding" width=100%>
+    <!-- <img src="photos/lake.jpg" class="padding" width=100%> -->
     <img src="photos/first_stop_wide.jpg" class="padding" width=100%>
-    <img src="photos/long_mt_range.jpg" class="padding" width=100%>
-    <img src="photos/long_plains.jpg" class="padding" width=100%>
-    <img src="photos/long_road_narrow.jpg" class="padding" width=100%>
-    <img src="photos/mt_cloud_wide.jpg" class="padding" width=100%>
+    <!-- <img src="photos/long_mt_range.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/long_plains.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/long_road_narrow.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/mt_cloud_wide.jpg" class="padding" width=100%> -->
     <img src="photos/mt_like_apple.jpg" class="padding" width=100%>
-    <img src="photos/mt_range.jpg" class="padding" width=100%>
+    <!-- <img src="photos/mt_range.jpg" class="padding" width=100%> -->
     <img src="photos/raven.jpg" class="padding" width=100%>
-    <img src="photos/red_mold.jpg" class="padding" width=100%>
-    <img src="photos/mt.jpg" class="padding" width=100%>
-    <img src="photos/road_to_mt.jpg" class="padding" width=100%>
+    <!-- <img src="photos/red_mold.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/mt.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/road_to_mt.jpg" class="padding" width=100%> -->
     <img src="photos/rodent.jpg" class="padding" width=100%>
+    <img src="photos/curve_stop_snow_road.jpg" class="padding" width=100%>
     <img src="photos/bear_eating.jpg" class="padding" width=100%>
-    <img src="photos/s_curve_road.jpg" class="padding" width=100%>
-    <img src="photos/snow_crack.jpg" class="padding" width=100%>
+    <!-- <img src="photos/s_curve_road.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/snow_crack.jpg" class="padding" width=100%> -->
     <img src="photos/split_road.jpg" class="padding" width=100%>
-    <img src="photos/holey_arctic_reflection.jpg" class="padding" width=100%>
-    <img src="photos/stones_arctic_ocean.jpg" class="padding" width=100%>
-    <img src="photos/stones_liquidate.jpg" class="padding" width=100%>
-    <img src="photos/sun_rays.jpg" class="padding" width=100%>
+    <!-- <img src="photos/holey_arctic_reflection.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/stones_arctic_ocean.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/stones_liquidate.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/sun_rays.jpg" class="padding" width=100%> -->
     <img src="photos/trees_below_mt.jpg" class="padding" width=100%>
     <img src="photos/trees_on_hill.jpg" class="padding" width=100%>
-    <img src="photos/tuk_sign.jpg" class="padding" width=100%>
-    <img src="photos/warm_arctic_reflection.jpg" class="padding" width=100%>
-    <img src="photos/wide_cloud.jpg" class="padding" width=100%>
-    <img src="photos/yellow_to_blue.jpg" class="padding" width=100%>
-    <img src="photos/yellow_to_blue_mid_road.jpg" class="padding" width=100%>
+    <!-- <img src="photos/tuk_sign.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/warm_arctic_reflection.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/wide_cloud.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/yellow_to_blue.jpg" class="padding" width=100%> -->
+    <!-- <img src="photos/yellow_to_blue_mid_road.jpg" class="padding" width=100%> -->
     <img src="photos/yellow_to_blue_side_road.jpg" class="padding" width=100%>
-    <img src="photos/yellow_to_blue_small.jpg" class="padding" width=100%>
+    <!-- <img src="photos/yellow_to_blue_small.jpg" class="padding" width=100%> -->
     <img src="photos/yukon_sign.jpg" class="padding" width=100%>
 </div>
     
 
-<div class="endparallax w3-display-container w3-text-white"> 
+<div class="endparallax w3-display-container w3-text-white" style="--bkurl: url('./arctic/background.jpg')"> 
     <div class="w3-display-middle center_align" font="Verdanda">
         <h5>
             6.8 - 100 Mile House (379 miles)</br>

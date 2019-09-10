@@ -1,0 +1,58 @@
+/* header photo and scroll */
+.parallax {
+    /* The image used */
+    background-image: var(--bkurl);
+    /* Full height */
+    height: 100%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+.padding {
+    align-content: center;
+    padding: 16px 128px 0px 128px;
+}
+body, html {
+    height: 100%;
+}
+/* don't let people save photo */
+img {
+  pointer-events: none;
+}
+/* since i can't figure out how to even the heights... */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    display: flex;
+    flex-wrap: wrap;
+}
+.columnleft {
+    float: left;
+    padding: 0px 8px 0px 0px;
+}
+.columnright {
+    float: left;
+    padding: 0px 0px 0px 8px;
+}
+.center_align {
+    text-align:center;
+}
+/* header photo and scroll */
+.endparallax {
+    /* The image used */
+    background-image: var(--bkurl);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--bkurl);
+    /* Full height */
+    height: 80%; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
