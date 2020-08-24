@@ -1,0 +1,49 @@
+#about 
+{
+    height: 50%;
+    color: black;
+}
+
+#about_container
+{
+    width: 70%;
+    height: 20%;
+    margin: auto;
+    top: 20%;
+    bottom: 27%;
+    position: relative;
+}
+
+#profile_pic
+{
+    width: 100%;
+    border-radius: 50%;
+}
+
+#about_text
+{
+    padding: 2%;
+}
+
+.about_text_link
+{
+    color: tomato;
+}
+
+.about_text_link:hover
+{
+    color: teal;
+}
+
+#career_text
+{
+    padding-left: 10%;
+}
+
+.about_emoji
+{
+    width: 3%;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 1%;
+}

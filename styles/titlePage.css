@@ -1,0 +1,86 @@
+html, body 
+{
+  margin: 0;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a 
+{
+  text-decoration: none;
+}
+
+#title_page {
+  background-size: cover;
+  background-repeat: no-repeat;    
+  text-align: center;     
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+#top_bar 
+{
+  padding-top: .5%;
+}
+
+.top_bar_link
+{
+  color: white;
+}
+
+.top_bar_link:hover 
+{
+  color: rgb(253, 227, 223);
+}
+
+#profile_mid {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px white;
+  border-style: solid;
+  padding: 30px;
+  background: rgba(95, 83, 77, 0.301);
+}
+
+#intro_text 
+{
+  font-size: 50px;
+}
+
+#bio_text 
+{
+  padding-top: 2%;
+}
+
+#footer 
+{
+  bottom: 5%;
+  position: absolute;
+  width: 100%;
+}
+
+#arrow {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(135deg);
+}
+
+/* parallax */
+.title_parallax {
+  background-image:   
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)),
+    url("../images/background.jpg");
+
+  height: 100%; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
