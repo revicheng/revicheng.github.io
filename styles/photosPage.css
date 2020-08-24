@@ -13,7 +13,7 @@
     background-image:   
       url("../photos/skyline2008/large/001.00.jpg");
   
-    height: 30%; 
+    height: 50%; 
   
     background-attachment: fixed;
     background-position: center;
@@ -24,7 +24,7 @@
 #photo_text
 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20vh;    
+    font-size: 23vh;    
     text-align: center;
     color: white; 
     padding-top: 6%;

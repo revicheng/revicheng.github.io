@@ -1,6 +1,6 @@
 #about 
 {
-    height: 50%;
+    height: 60%;
     color: black;
 }
 
@@ -46,4 +46,22 @@
     border-radius: 50%;
     vertical-align: middle;
     padding: 1%;
+}
+
+#contact 
+{
+  text-align: center;  
+  width: 100%;
+  font-size: small;
+  padding-top: 2%;
+}
+
+.mid_bar_link
+{
+  color: tomato;
+}
+
+.mid_bar_link:hover 
+{
+  color: teal;
 }
