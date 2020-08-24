@@ -84,3 +84,8 @@ a
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.infinite-scroll-last
+{
+  text-align: center;
+}
