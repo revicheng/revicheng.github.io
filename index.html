@@ -2,227 +2,30 @@
 <html>
     <head>
         <title>Revi Cheng</title>
-        <link rel="stylesheet" type="text/css" href="./styles/titlePage.css"> 
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" type="text/css" href="styles/aboutPage.css"> 
-        <link rel="stylesheet" type="text/css" href="styles/photosPage.css"> 
-        <link rel="stylesheet" type="text/css" href="styles/galleryPage.css"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+            }
+            .message {
+                text-align: center;
+                font-size: 2em;
+                color: #333;
+            }
+        </style>
     </head>
     <body>
-        <div class="title_parallax" id="title_page">            
-            <div data-aos="fade">
-                <div id="top_bar">
-                    <a href="#about" class="top_bar_link">About</a> | 
-                    <a href="#photos" class="top_bar_link">Photos</a>
-                </div>
-                <div id="profile_mid">    
-                    <div id="intro_text">Hi! My name is Revi Cheng</div>
-                    <div id="bio_text"></div>
-                </div>
-                <div id="footer">
-                    <a href="#about">
-                        <div class="animate__animated animate__bounce animate__infinite">
-                            <span id="arrow"></span>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        <div class="message">
+            <h1>Website under construction...<br></h1>
+            it's a 😺astrophe<br>
+            - revi cheng
         </div>
-
-        <div id="about">       
-            <div id="about_container">
-                <table id="about_table" style="width:100%">
-                    <tr>
-                        <td style="width: 60%;">
-                            <div style="font-size: 40px;">Rebecca (Revi) Cheng</div>
-                            <div id="about_text">
-                                <img class="about_emoji" src="images/msft_logo.jpg">Software Developer at Microsoft on 
-                                    <a href="https://azure.microsoft.com/en-us/overview/azure-stack/#overview" target="_blank" class="about_text_link">Azure Stack Compute</a><br>
-                                <div id="career_text">
-                                    - Working on hybrid and edge cloud computing solutions <br>
-                                    - Using rest APIs to manage and create vms on the Compute Resource Provider
-                                </div><br>
-                                <img class="about_emoji" src="images/uw_logo.jpg">Alumnus from the 
-                                    <a href="https://www.washington.edu/" target="_blank" class="about_text_link">University of Washington</a>                                    
-                                <div id="career_text">
-                                    - B.S. in Computer Science from the <a href="https://www.cs.washington.edu/about_us" target="_blank" class="about_text_link">Paul G Allen School of Computer Science and Engineering</a>
-                                </div><br>
-                                <img class="about_emoji" src="images/camera_logo.jpg">Aspiring nature photographer shooting on a Canon 6d Mark II and a Sony RX100
-                                <table id="contact">
-                                    <tr>
-                                        <td>
-                                            <a href="https://www.linkedin.com/in/revicheng/" class="mid_bar_link">LinkedIn</a>
-                                        </td>
-                                        <td>
-                                            <a href="https://www.facebook.com/revi.cheng" class="mid_bar_link">Facebook</a>                                
-                                        </td>
-                                        <td>
-                                            <a href="https://instagram.com/rlyxc" class="mid_bar_link">Instagram</a>                                
-                                        </td>
-                                        <td>
-                                            <a href="mailto: revi.cheng@gmail.com" class="mid_bar_link">Email</a>
-                                        </td>                            
-                                    </tr>
-                                </table>
-                            </div>
-                        </td>
-                        <td style="width:5%"></td>
-                        <td style="width:20%">
-                            <img id="profile_pic" src="images/profile.jpg">
-                        </td>
-                    </tr>
-                </table>
-            </div>     
-        </div>
-
-        <div id="photos">
-            <div id="photo_banner">
-                <p id="photo_text">Photos</p>
-            </div>
-            <table id="photo_structure">
-                <!-- <tr>
-                    <td id="subject_selector">
-                        <table id="subject_table">
-                            <tr>
-                                <td class="subject_cell" id="animal_cell">
-                                    animal
-                                </td>
-                                <td class="subject_cell" id="nature_cell">
-                                    nature
-                                </td>
-                                <td class="subject_cell" id="architecture_cell">
-                                    city
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td id="trip_selector">
-                        <table id="trip_table">
-                            <tr>
-                                <td class="trip_cell">
-                                    arctic
-                                </td>
-                                <td class="trip_cell">                                  
-                                    Europe
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr> -->
-                <tr>
-                    <td id="gallery_container">  
-                        <div class="container">                    
-                            <div class="masonry">
-                                <a href="./photos/skyline2008/large/001.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/001.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/002.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/002.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/003.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/003.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/004.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/004.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/005.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/005.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/006.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/006.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/007.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/007.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/008.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/008.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/009.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/009.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/010.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/010.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/011.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/011.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/012.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/012.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/013.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/013.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/014.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/014.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/015.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/015.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/016.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/016.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/017.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/017.00.jpg">
-                                    </div>
-                                </a>
-                                <a href="./photos/skyline2008/large/018.00.jpg">
-                                    <div class="grid">
-                                            <img src="./photos/skyline2008/018.00.jpg">
-                                    </div>
-                                </a>
-                            </div>                         
-                        </div>  
-                    </td>
-                </tr>
-            </table>
-        </div>
-        
-        
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-        <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
-        <script src="index.js"></script>
-        <script>
-            AOS.init();
-        </script>
     </body>
 </html>
